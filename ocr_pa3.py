@@ -3,8 +3,8 @@ from sklearn.metrics import accuracy_score
 import pandas as pd
 
 #open all files as dataframe
-testdata = (pd.read_csv('OCR-data/ocr_test.txt',sep='\t',names=[0,1,2,3])).dropna()
-traindata = (pd.read_csv('OCR-data/ocr_train.txt',sep='\t',names=[0,1,2,3])).dropna()
+testdata = (pd.read_csv('ocr_test.txt',sep='\t',names=[0,1,2,3])).dropna()
+traindata = (pd.read_csv('ocr_train.txt',sep='\t',names=[0,1,2,3])).dropna()
 
 #extract needed columns
 train_data = (traindata[1].str[3:]).tolist()
