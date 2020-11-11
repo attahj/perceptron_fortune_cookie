@@ -3,19 +3,19 @@ from sklearn.linear_model import Perceptron
 from sklearn.metrics import accuracy_score
 
 #open all files and parse each line
-with open('fortune/testdata.txt') as f:
+with open('testdata.txt') as f:
     testdata = [line.rstrip() for line in f]
 
-with open('fortune/testlabels.txt') as f:
+with open('testlabels.txt') as f:
     testlabels = [line.rstrip() for line in f]
 
-with open('fortune/traindata.txt') as f:
+with open('traindata.txt') as f:
     traindata = [line.rstrip() for line in f]
 
-with open('fortune/trainlabels.txt') as f:
+with open('trainlabels.txt') as f:
     trainlabels = [line.rstrip() for line in f]
     
-with open('fortune/stoplist.txt') as f:
+with open('stoplist.txt') as f:
     stoplist = [line.rstrip() for line in f]    
 
 #split the train data and test data into list of lists (bag of words)
